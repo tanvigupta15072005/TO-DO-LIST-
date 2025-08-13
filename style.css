@@ -1,0 +1,13 @@
+
+:root{--bg:#0b1220;--card:#071021;--accent:#7b61ff;--muted:#cbd5e1}
+[data-theme="light"]{--bg:#f7fafc;--card:#ffffff;--accent:#6b46ff;--muted:#2d3748}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);font-family:Inter,system-ui;color:var(--muted);display:flex;align-items:center;justify-content:center;height:100vh}
+.app{width:360px;background:linear-gradient(180deg,var(--card),rgba(255,255,255,0.02));padding:18px;border-radius:14px;box-shadow:0 10px 30px rgba(2,6,23,.6)}
+header{display:flex;justify-content:space-between;align-items:center}
+.add input{width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+.lists{margin-top:14px}
+.task{display:flex;justify-content:space-between;align-items:center;padding:10px;border-radius:10px;margin-bottom:8px;background:rgba(255,255,255,0.02);cursor:pointer;transition:transform .18s,opacity .18s}
+.task.completed{opacity:.5;text-decoration:line-through;transform:translateX(6px)}
+.mode{cursor:pointer;padding:8px;border-radius:8px}
+.foot{opacity:.6;text-align:center;margin-top:12px;font-size:13px}
